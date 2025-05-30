@@ -1,0 +1,15 @@
+<div class="category-container">
+  <h1>Product Categories</h1>
+
+  <div class="category-list">
+    <div 
+      class="category-card" 
+      *ngFor="let category of categories">
+      
+      <a [routerLink]="['/category', category]" class="category-link">
+        {{ category | titlecase }}
+      </a>
+
+    </div>
+  </div>
+</div>

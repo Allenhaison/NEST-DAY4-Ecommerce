@@ -1,0 +1,12 @@
+
+<div class="container"><div class="offer">
+    <h2 class="text-center py-4 ">Today's Offer</h2>
+</div>
+<div class="row">
+    @for (product of product; track product.id){
+        <div class="col mt-4">
+            <app-card [product]="product"></app-card>
+        </div>
+    }
+</div>
+</div>
